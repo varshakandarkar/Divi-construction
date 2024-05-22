@@ -1,0 +1,1155 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+display:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+display:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+ nav label i{
+font-size:30px;
+padding:20px;
+}
+nav label,input{
+display:none;
+}
+section{
+width:100%;
+background:orange;
+display:flex;
+}
+.outer{
+position:relative;
+float:left;
+width:70%;
+justify-content:center;
+padding:150px 50px;
+}
+.outer::before{
+content:'';
+background-image:url(jcp.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(25%);
+}
+.outer h1{
+font-size:70px;
+margin-left:40px;
+position:relative;
+color:white;
+padding-left:20px;
+border-left:5px solid orange;
+}
+.outer p{
+font-size:20px;
+position:relative;
+color:white;
+margin-left:40px;
+}
+button{
+background:orange;
+border:2px solid orange;
+color:white;
+margin-left:40px;
+width:180px;
+height:40px;
+letter-spacing:4px;
+position:relative;
+}
+table td{
+padding:20px;
+}
+section article{
+width:30%;
+height:500px;
+background:orange;
+}
+article h1{
+padding:20px 40px;
+
+}
+article p{
+color:white;
+}
+header{
+width:100%;
+height:150px;
+display:flex;
+}
+header h1{
+margin:50px 80px;
+font-size:40px;
+}
+header button{
+margin:50px 100px;
+background:white;
+border:3px solid orange;
+color:orange;
+height:50px;
+}
+.cont{
+width:100%;
+height:700px;
+}
+.cont .l{
+width:30%;
+height:100%;
+
+float:left;
+}
+.cont .r{
+width:70%;
+height:100%;
+float:right;
+}
+.cont .l img{
+width:100%;
+height:700px;
+}
+
+.cont .r p{
+column-count:2;
+column-gap:30px;
+margin:30px;
+}
+
+.cont .r .a h6{
+width:100px;
+height:8px;
+margin-left:40px;
+margin-top:15px;
+background:orange;
+}
+.cont .r h1{
+column-span:all;
+margin-left:40px;
+font-size:50px;
+}
+.cont .r button{
+width:230px;
+height:70px;
+border:4px solid black;
+color:black;
+margin-top:20px;
+background:none;
+letter-spacing:5px;
+}
+.cont .r .foo{
+width:98%;
+height:150px;
+display:flex;
+}
+
+.cont .r .foo .fl{
+width:50%;
+height:154px;
+margin-bottom:0px;
+background:orange;
+text-align:center;
+}
+.cont .r .foo .fr{
+width:50%;
+height:154px;
+margin-bottom:0px;
+background:black;
+color:white;
+text-align:center;
+}
+.cont .r .foo .fr h1{
+font-size:40px;
+margin-top:20px;
+}
+.cont .r .foo .fl h1{
+font-size:40px;
+margin-top:20px;
+}
+
+.lap{
+width:100%;
+height:180px;
+
+}
+.lap h1{
+font-size:50px;
+text-align:center;
+padding-top:50px;
+}
+.lap .a h6{
+width:100px;
+height:8px;
+background:orange;
+margin-left:720px;
+}
+
+.img3{
+width:100%;
+display:flex;
+gap:50px;
+justify-content:center;
+}
+
+.projectT{
+width:100%;
+display:flex;
+gap:50px;
+justify-content:center;
+}
+.pt{
+width:250px;
+height:250px;
+border:2px solid lightgray;
+padding:25px;
+}
+
+.pt button{
+margin-left:0px;
+background:white;
+color:gray;
+border:2px solid gray;
+}
+.bn{
+width:100%;
+height:150px;
+text-align:center;
+}
+.bn button{
+color:black;
+background:white;
+height:70px;
+width:180px;
+margin:50px 500px;
+border:2px solid black;
+}
+.bn button:hover{
+background:black;
+color:white;
+width:200px;
+}
+.cont3{
+width:100%;
+display:flex;
+background:black;
+}
+.cont3 .aside{
+width:30%;
+height:450px;
+padding:40px;
+}
+.aside h1{
+color:white;
+}
+.aside p{
+color:white;
+padding-top:40px;
+}
+.aside .a h6{
+margin-left:0px;
+margin-top:15px;
+}
+.aside button{
+margin:40 0;
+height:50px;
+background:none;
+}
+.cont3 .article{
+width:70%;
+height:450px;
+}
+
+.icon{
+width:100%;
+display:flex;
+
+}
+.icon .LI{
+width:30%;
+height:550px;
+background:white;
+}
+.LI h1{
+margin:50px 80px;
+font-size:50px;
+}
+.LI p{
+margin:50px 80px;
+}
+.icon .a h6{
+border-bottom:5px solid orange;
+width:80px;
+margin-left:80px;
+margin-bottom:50px;
+}
+.icon .RI{
+width:70%;
+height:550px;
+}
+.icon .RI h4{
+margin-left:50px;
+
+font-size:25px;
+
+}
+.icon .RI p{
+margin-left:50px;
+margin-bottom:10px;
+}
+
+.icon .LI button{
+border:5px solid orange;
+background:none;
+height:50px;
+margin:0 80px;
+color:orange;
+}
+
+.header{
+width:100%;
+height:200px;
+}
+.header h1{
+font-size:60px;
+margin-left:100px;
+margin-top:90px;
+text-align:center;
+}
+.header .a h6{
+border-bottom:5px solid orange;
+width:70px;
+text-align:center;
+margin: 30px 700px;
+}
+
+.cont4{
+width:100%;
+height:600px;
+display:flex;
+justify-content:center;
+
+}
+.cont4 .inner1{
+height:400px;
+width:400px;
+margin:50px;
+text-align:center;
+border:2px solid lightgray;
+}
+.cont4 .inner1 p{
+margin:22px;
+}
+
+.images{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+.images img{
+margin:40px;
+width:250px;
+}
+.form{
+width:100%;
+display:flex;
+}
+.form .lf{
+width:50%;
+height:600px;
+background:orange;
+
+}
+.form .lf input{
+width:250px;
+height:80px;
+display:inline-block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:40px;
+}
+.form .lf button{
+border:5px solid white;
+color:white;
+height:60px;
+margin:50 100px;
+}
+.form .lf textarea{
+width:600px;
+height:200px;
+border:2px solid orange;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:60px;
+margin:50 100px;
+}
+.form .rf{
+width:50%;
+height:600px;
+}
+.form .rf nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+padding-top:70px;
+}
+.form .rf p{
+color:gray;
+font-size:15px;
+margin-left:80px;
+}
+footer {
+width:100%;
+height:80px;
+background:black;
+}
+
+footer{
+width:100%;
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:300px;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+section{
+width:100%;
+background:orange;
+display:flex;
+flex-direction:column
+}
+.outer{
+padding-left:10px;
+width:100%;
+}
+.outer h1{
+margin-left:10px;
+margin-top:50px;
+font-size:30px;
+
+}
+.outer p{
+margin-left:10px;
+font-size:15px;
+}
+.outer button{
+margin-left:10px;
+font-size:10px;
+}
+
+table td{
+padding:30 40; 
+}
+section article{
+width:100%;
+height:500px;
+background:orange;
+}
+article p{
+color:white;
+}
+header{
+width:100%;
+flex-direction:column;
+}
+header h1{
+margin:30px 200px;
+font-size:20px;
+width:100%;
+}
+header button{
+background:white;
+border:3px solid orange;
+color:orange;
+margin:0px 180px;
+height:50px;
+
+}
+article h1{
+padding:0px 0px;
+text-align:center;
+}
+.cont{
+width:100%;
+flex-direction:column;
+}
+.cont .l{
+width:100%;
+height:900px;
+}
+.cont .r{
+width:100%;
+height:900px;
+column-count:1;
+}
+.cont .l img{
+width:100%;
+height:900px;
+}
+
+.cont .r p{
+column-count:1;
+margin:30px;
+}
+
+.a h6{
+width:100px;
+height:8px;
+margin-left:40px;
+margin-top:15px;
+background:orange;
+}
+.cont .r h1{
+column-span:all;
+margin-left:40px;
+font-size:35px;
+margin-top:10px;
+}
+.cont .r button{
+width:200px;
+height:50px;
+border:4px solid black;
+color:black;
+margin-left:5px;
+letter-spacing:5px;
+}
+.cont .r .foo{
+width:100%;
+flex-direction:column;
+}
+
+.cont .r .foo .fl{
+width:100%;
+height:119px;
+padding-bottom:0px;
+background:orange;
+font-size:10px;
+text-align:center;
+
+}
+.cont .r .foo .fr{
+width:100%;
+height:119px;
+margin-bottom:0px;
+background:black;
+color:white;
+text-align:center;
+font-size:10px;
+}
+
+
+.lap{
+width:100%;
+height:300px;
+background:lightgray;
+flex-direction:column;
+text-align:center;
+
+}
+.lap h1{
+margin-top:100px;
+font-size:40px;
+margin-left:0px;
+}
+.lap .a h6{
+width:100px;
+height:8px;
+background:orange;
+margin-left:250px;
+}
+
+.img3{
+margin-top:100px;
+width:100%;
+flex-direction:column;
+}
+.img3 img{
+width:100%;
+}
+.projectT{
+width:100%;
+flex-direction:column;
+}
+.pt{
+width:100%;
+border:2px solid lightgray;
+padding:25px;
+}
+
+.pt button{
+margin-left:0px;
+background:white;
+color:gray;
+border:2px solid gray;
+}
+.bn{
+width:100%;
+}
+.bn button{
+color:black;
+background:white;
+height:50px;
+margin-left:250px;
+border:2px solid black;
+}
+.bn button:hover{
+background:black;
+color:white;
+}
+
+.cont3{
+width:100%;
+background:gray;
+display:flex;
+flex-direction:column;
+}
+.cont3 .aside{
+width:100%;
+height:450px;
+padding:40px;
+background:black;
+}
+.aside h1{
+color:white;
+}
+.aside p{
+color:white;
+padding-top:40px;
+}
+.aside .a h6{
+margin-left:0px;
+margin-top:15px;
+}
+.aside button{
+margin:40 0;
+height:50px;
+background:none;
+}
+.aside button:hover{
+background:orange;
+width:220px;
+color:white;
+}
+.cont3 .article{
+width:100%;
+height:450px;
+}
+.cont3 .article:hover{
+background:gray;
+}
+
+.icon{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.icon .LI{
+width:100%;
+background:white;
+}
+.LI h1{
+margin-left:70px;
+font-size:50px;
+}
+.LI p{
+margin:50 80;
+}
+.icon .a h6{
+border-bottom:5px solid orange;
+width:80px;
+margin-left:80;
+margin-bottom:50;
+}
+.icon .RI{
+width:100%;
+}
+.icon .RI h4{
+margin-bottom:10;
+font-size:20px;
+
+}
+.icon .RI p{
+margin-left:50px;
+margin-bottom:10px;
+}
+
+.icon .LI button{
+border:5px solid orange;
+background:none;
+height:50px;
+color:orange;
+}
+
+.header{
+width:100%;
+
+}
+.header h1{
+font-size:60px;
+text-align:center;
+margin-top:90px;
+
+}
+.header .a h6{
+border-bottom:5px solid orange;
+width:70px;
+text-align:center;
+margin: 30 300px;
+}
+
+.cont4{
+width:100%;
+height:1000px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+.cont4 .inner1{
+width:80%;
+margin-left:50px;
+border:2px solid lightgray;
+}
+.cont4 .inner1 p{
+margin:22px;
+}
+
+.images{
+display:flex;
+flex-direction:column;
+margin-left:100px;
+flex-wrap:wrap;
+}
+images img{
+width:300px;
+}
+.form{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.form .lf{
+width:100%;
+height:700px;
+background:orange;
+}
+.form .lf input{
+width:200px;
+height:80px;
+display:inline-block;
+border:2px solid white;
+background:white;
+}
+.form .lf button{
+border:5px solid white;
+color:white;
+height:60px;
+margin:50 100px;
+}
+.form .lf textarea{
+width:500px;
+height:150px;
+border:2px solid orange;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:40px;
+margin-left:100px;
+}
+.form .lf .a{
+width:100px;
+border-bottom:8px solid black;
+margin-left:100px;
+margin-bottom:30px;
+}
+.form .rf{
+width:100%;
+height:600px;
+}
+.form .rf nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+padding-top:70px;
+}
+.form .rf p{
+color:black;
+font-size:15px;
+margin-left:80px;
+}
+
+
+footer{
+width:100%;
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:250px;
+}
+}
+
+
+</style>
+</head>
+<body>
+<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="#"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">Home</a></li>
+			<li><a href="Project.html">Project</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">contact</a></li>
+		</ul>
+</nav>
+	<section>
+			<div class="outer">
+				<h1>Divi Construction</h1><br>
+				<p>lorem ipsum dolor sit amed consectetur adipicing elit nullam<br>lectus erart consecteture eu sapien  egret rhnous consecteture</p>
+				<br><br>
+				<button>VIEW OUR WORK</button>
+			</div>
+		
+		<article><br>
+			<h1>OUR SERVICES</h1>
+			<table>
+			<tr>
+				<td><i class="fa-sharp fa-solid fa-city" style="font-size:40px; color:white"></i></td>
+				<td><h4>Building Construction</h4><br><p style>Lorem ipsum dolor sit amet</p></td>
+			</tr>
+			<tr>
+			<td><i class="fa-solid fa-boxes-packing"style="font-size:40px; color:white"></i></td>
+			<td><h4>Foundation Work</h4><br><p>Lorem ipsum dolor sit amet</p></td>
+			</tr>
+			<tr>
+			<td><i class="fa-solid fa-car-side"style="font-size:40px; color:white"></i></td>
+			<td><h4>Tear-dowwn and haul-offs</h4><br><p>orem ipsum dolor sit amet</p></td>
+			</tr>
+			<tr>
+			<td><i class="fa-solid fa-school"style="font-size:40px; color:white"></i></td>
+			<td><h4>site management</h4><br><p>Lorem ipsum dolor sit amet</p></td>
+			</tr>
+			</table>
+		</article>
+	</section>
+	<header>
+		<h1>Get a Quate for your project</h1>
+		<button>FREE Quate</button>
+	</header>
+	<div class="cont">
+		<div class="l">
+			<img src="img/bul1.jpg">
+		</div>
+		<div class="r"><br><br>
+		<h1>No Project too Big Or Too<br> Small</h1>
+		<div class="a"><h6></h6></div>
+			<p>Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।
+<br><br>Find JavaScript : Search Services, Web Results, Result Pages, Popular Searches।
+Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest  Info। Updated Info। Services: coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। ServicesSearch Services, Web Results, <br><br>Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: JavaScriptJavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services,<br><br> Web Results, Result Pages, Popular Searches।Find JavaScript codin Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।g course. <br><br>
+
+<button>LEARN MORE</button></p>
+		<div class="foo">
+			<div class="fl">
+				<h1>12<br>Years Established</h1>
+
+			</div>
+			<div class="fr">
+				<h1>250<br>Completed project</h1>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="lap">
+		<h1>Latest Projects</h1><br>
+		<div class="a"><h6></h6></div>
+	</div>
+	<div class="img3">
+		<img src="img/bul.jpg" width="300" height="300">
+		<img src="img/bul2.jpg" width="300" height="300">
+		<img src="img/bul3.jpg" width="300" height="300">
+	</div>
+	<br><br>
+	<div class="projectT">
+		<div class="pt">
+			<h1>Project Title</h1><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam blandit est in eros elementum, quis vehicula est suscipit. Pellentesque posuere erat erat.</p><br><br>
+			<button>VIEW PROJECT</button>
+		</div>
+		
+		<div class="pt">
+			<h1>Project Title</h1><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam blandit est in eros elementum, quis vehicula est suscipit. Pellentesque posuere erat erat.</p><br><br>
+			<button>VIEW PROJECT</button>
+		</div>
+		
+		<div class="pt">
+			<h1>Project Title</h1><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam blandit est in eros elementum, quis vehicula est suscipit. Pellentesque posuere erat erat.</p><br><br>
+			<button>VIEW PROJECT</button>
+		</div>
+	</div>
+	<div class="bn">
+		<button>VIEW ALL</button>
+	</div>
+	<div class="cont3">
+		<div class="aside">
+			<h1>We’ve Been<br> Building For <br>Over 10 Years</h1>
+			<div class="a"><h6></h6></div>
+			<p>Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.</p>
+			<button>ABOUT US</button>
+		</div>
+		<div class="article">
+			<video controls muted width="100%" height="500px">
+				<source src="img/jcb11.mp4" type="video/mp4" >
+			</video>
+		</div>
+	</div>
+	<div class="icon">
+		<div class="LI">
+			<h1>Let’s Build <br>Something<br> Together</h1>
+			<div class="a"><h6></h6></div>
+			<p>Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a sit commodo elit dui sit amet risus.Maecenas ornare nisl a tortor ultrices bibendum.</p>
+			<button>GET IN TOUCH</button>
+		</div>
+		<div class="RI"><br><br><br>
+			<h4>Donec ruturm congue leo eget malesuada?</h4><br>
+			<p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS <br>
+			from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how .<br>
+			sourece i am project the bjgu m,jhdstds8project the bjgu m,jhStart learning CSS nCSS <br>
+			CSS from basic to advanced. Start learning CSS.should be displayed<br><br>
+			</p>
+			<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h4><br>
+			
+			<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h4><br>
+			<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h4><br>
+			
+			<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h4><br>		
+		</div>
+	</div>
+	<div class="header">
+		<h1>Client Testimonials</h1>
+		<div class="a"><h6></h6></div>
+	</div>
+	<div class="cont4">
+		
+		<div class="inner1">
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem;margin-top:25"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular  fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular  fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:2rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+		</div>
+		<div class="inner1">
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem;margin-top:25"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:2rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+
+		</div>
+		<div class="inner1">
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem; margin-top:25"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-solid fa-star"style="color:orange;font-size:2rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:2rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+		</div>
+	</div>
+	<div class="images">
+		<img src="img/logo.jpg" height="100" width="200">
+		<img src="img/logo1.jpg" height="100" width="200">
+		<img src="img/logo2.jpg" height="100" width="200">
+		<img src="img/logo4.jpg" height="100" width="200">
+		<img src="img/logo3.jpg" height="100" width="200">
+		<img src="img/logo4.jpg" height="100" width="200">
+		<img src="img/logo6.jpg" height="100" width="200">
+		<img src="img/logo7.jpg" height="100" width="200">
+		
+	</div>
+	<div class="form">
+		<div class="lf">
+			<h1>Contact Us</h1>
+			<div class="a"><h6></h6></div>
+			<input type="text" placeholder="Name...">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+			
+		</div>
+		<div class="rf">
+			<nav>
+				<i class="fa-brands fa-facebook-f" style="font-size:30px; color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-internet-explorer"style="font-size:30px;color:white;"></i>
+			</nav><br><br>
+				<p><i class="fa-sharp fa-solid fa-location-dot"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur elit.</p><br><br>
+				<p><i class="fa-solid fa-phone"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+00 123 456 7893</p><br><br>
+				<p><i class="fa-solid fa-envelope" style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divi-construction@gmail.com</p>
+		</div>
+	</div>
+		<footer>
+		<div class="lef">
+			<span>Designed by Varsha Wagh &nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,803 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+.main{
+width:100%;
+height:1200px;
+background:pink;
+}
+nav{
+width:100%;
+height:80px;
+background:lightgray;
+position:fixed;
+}
+nav .left{
+width:40%;
+height:100%;
+background:orange;
+float:left;
+line-height:100px;
+}
+nav .left h1{
+margin-left:40px;
+}
+nav .right{
+width:60%;
+height:100%;
+background:green;
+float:right;
+}
+nav .right li{
+list-style:none;
+width:80px; 
+line-height:100px;
+float:left;
+}
+nav .right p{
+margin-top:40px;
+}
+section{
+width:100%;
+height:500px;
+background:lime;
+}
+aside{
+width:70%;
+height:500px;
+background:url(jcp1.jpg) no-repeat;
+background-size:100% 100%;
+float:left;
+position:relative;
+opacity:0.9;
+z-index:5;
+
+}
+article{
+width:30%;
+height:500px;
+background:orange;
+float:right;
+}
+article:hover{
+transition:all 2s;
+}
+.inner{
+position:absolute;
+width:70%;
+height:250px;
+left:10%;
+top:100px;
+z-index:10;
+}
+.inner h1{
+color:white;
+font-size:50px;
+border-left:10px solid orange;
+padding:10px;
+}
+
+.inner p{
+color:white;`
+font-size:30px;
+}
+.inner button{
+width:180px;
+height:40px;
+background:orange;
+border:none;
+color:white;
+}
+section article h1{
+margin-top:50px;
+margin-left:40px;
+}
+section article h5{
+margin-left:40px;
+margin-top:30px;
+font-size:40px;
+color:white;
+float:left;
+}
+
+section article p{
+margin-left:40px;
+text-indent:30px;
+margin-top:10px;
+color:white;
+}
+section article h4{
+margin-top:30px;
+margin-left:40px;
+text-indent:30px;
+
+}
+header{
+width:100%;
+height:100px;
+background:lightgray;
+
+}
+header .ll{
+width:70%;
+height:100%;
+background:white;
+line-height:80px;
+margin-left:100px;
+font-size:25px;
+float:left;
+}
+header .rr{
+width:20%;
+height:100%;
+background:;
+float:right;
+}
+header .rr button{
+width:180px;
+height:50px;
+border:2px solid orange;
+color:orange;
+margin-left:20px;
+margin-top:25px;
+}
+.cont{
+width:100%;
+height:700px;
+background:yellow;
+}
+.cont .l{
+width:30%;
+height:100%;
+background:aqua;
+float:left;
+}
+.cont .r{
+width:70%;
+height:100%;
+background:lime;
+float:right;
+}
+.cont .l img{
+width:100%;
+height:700px;
+}
+
+.cont .r p{
+column-count:2;
+column-gap:30px;
+margin:40px;
+}
+@font-face{
+font-family:myfont;
+src:url(ALGER.ttf);
+
+}
+.cont .r h1{
+column-span:all;
+margin-left:40px;
+font-family:myfont;
+}
+.cont .r button{
+width:200px;
+height:40px;
+border:2px solid black;
+color:black;
+letter-spacing:5px;
+}
+.cont .r .foo{
+width:98%;
+height:119px;
+margin-top:12.9%;
+background:pink;
+
+}
+
+.cont .r .foo .fl{
+width:50%;
+height:119px;
+margin-bottom:0px;
+background:orange;
+font-size:10px;
+float:left;
+text-align:center;
+
+}
+.cont .r .foo .fr{
+width:50%;
+height:119px;
+margin-bottom:0px;
+background:black;
+color:white;
+text-align:center;
+font-size:10px;
+float:right;
+
+}
+.cont .r .foo .fr h1{
+margin-top:30px;
+}
+.cont .r .foo .fl h1{
+margin-top:30px;
+
+}
+.cont2{
+width:100%;
+height:1125px;
+background:lightgray;
+}
+.cont2 .cl{
+width:33.5%;
+height:100%;
+background:yellow;
+float:left;
+}
+.cont2 .cm{
+width:33.5%;
+height:100%;
+background:purple;
+float:left;
+}
+.cont2 .cr{
+width:33%;
+height:100%;
+background:brown;
+float:right;
+}
+.cont2 .cm h1{
+font-size:60px;
+text-align:center;
+}
+.cont2 .cm .a h6{
+width:100px;
+height:10px;
+background:orange;
+margin:auto;
+}
+.cont2 .cm img{
+padding:50px;
+width:535px;
+height:250px;
+}
+.cont2 .cm p button{
+width:250px;
+height:50px;
+letter-spacing:5px;
+}
+.cont2 .cm p{
+width:500px;
+padding:20px;
+height:500px;
+margin-left:40px;
+border:1px solid ;
+font-size:20px;
+}
+
+.cont2 .cr p{
+width:500px;
+padding:20px;
+height:500px;
+margin-left:40px;
+border:1px solid ;
+font-size:20px;
+}
+.cont2 .cr img{
+padding:50px;
+width:535px;
+height:250px;
+}
+.cont2 .cr p button{
+width:250px;
+height:50px;
+letter-spacing:5px;
+}
+.cont2 .cl p button{
+width:250px;
+height:50px;
+letter-spacing:5px;
+}
+
+.cont2 .cl img{
+padding:50px;
+width:535px;
+height:250px;
+}
+
+.cont2 .cl p{
+width:500px;
+padding:20px;
+height:500px;
+margin-left:40px;
+border:1px solid ;
+font-size:20px;
+}
+.nav{
+width:100%;
+height:150px;
+background:lightgray;
+}
+.nav button{
+width:250px;
+height:70px;
+margin-left:900px;
+letter-spacing:5px;
+margin-top:40px;
+font-size:30px;
+border:3px solid ;
+}
+.cont3{
+width:100%;
+height:800px;
+background:green;
+}
+.cont3 .le{
+width:30%;
+height:100%;
+background:black;
+padding:0px;
+float:left;
+}
+.cont3 .le p{
+color:white;
+margin:20px;
+
+}
+.cont3 .le h1{
+color:white;
+margin:20px;
+font-size:50px;
+}
+.cont3 .le .aa h6{
+width:100px;
+height:10px;
+margin:20px;
+
+background:orange;
+}
+.cont3 .le button{
+width:250px;
+height:70px;
+letter-spacing:5px;
+color:orange;
+background:black;
+margin:20px;
+border:3px solid orange;
+}
+.cont3 .re{
+width:70%;
+height:100%;
+float:right;
+background:pink;
+}
+.cont3 .re img{
+background:gray;
+width:100%;
+height:500;
+
+
+}
+.cont3 .re .footer{
+width:100%;
+height:100px;
+background:red;
+display:flex;
+margin-top:15%;
+}
+.cont3 .re .footer .rfl{
+width:50%;
+height:100%;
+background:orange;
+text-align:center;
+}
+.cont3 .re .footer .rfr{
+width:50%;
+height:100%;
+background:red;
+margin-left:30px;
+}
+.cont3 .re .footer .rfr button{
+width:400px;
+height:80px;
+letter-spacing:5px;
+margin-left:200px;
+}
+.cont3 .re .footer .rfr:hover button{
+background:black;
+color:white;
+}
+.outer{
+width:100%;
+height:900px;
+background:lightgray;
+display:flex;
+}
+.lefto{
+width:30%;
+height:100%;
+background:lime;
+}
+.righto{
+width:70%;
+height:100%;
+background:gray;
+}
+.outer .lefto h1{
+	font-size:60px;
+	margin-left:100px;
+	margin-top:100px;
+	margin-bottom:50px;
+}
+.outer .lefto .aaa{
+width:100px;
+height:10px;
+margin-left:100px;
+margin-bottom:50px;
+background:orange;
+}
+.outer .lefto p{
+margin-left:100px;
+font-size:25px;
+}
+.outer .lefto button{
+margin-top:50px;
+width:250px;
+height:60px;
+border:5px solid orange;
+letter-spacing:5px;
+margin-left:100px;
+color:orange;
+}
+.outer .righto h4{
+margin-left:50px;
+margin-top:50px;
+margin-bottom:25px;
+font-size:30px;
+
+}
+.outer .righto p{
+margin-left:50px;
+margin-bottom:25px;
+font-size:25px;
+
+}
+.nav11{
+width:100%;
+height:200px;
+background:white;
+}
+.nav11 h1{
+text-align:center;
+font-size:50px;
+}
+.nav11 .abc{
+width:100px;
+height:10px;
+margin-left:900px;
+margin-bottom:50px;
+margin-top:50px;
+background:orange;
+}
+.cont4{
+width:100%;
+height:600px;
+background:lightgray;
+display:flex;
+justify-content:center;
+
+}
+.cont4 .inner1{
+height:400px;
+width:400px;
+margin:50px;
+text-align:center;
+
+}
+.cont4 .inner1 p{
+font-size:23px;
+margin:22px;
+}
+
+.cont5{
+width:100%;
+height:300px;
+background:gray;
+display:flex;
+align-items:center;
+column-gap:0px;
+}
+.cont5 img{
+width:300px;
+height:150px;
+margin:0px;
+margin-left:150px;
+}
+
+
+.cont6{
+width:100%;
+height:300px;
+background:gray;
+display:flex;
+justify-content:center;
+column-gap:70px;
+}
+.cont6 img{
+width:300px;
+height:150px;
+margin:10px;
+margin-left:60px;
+}
+.cont7{
+width:100%;
+height:900px;
+background:red;
+display:flex;
+}
+.cont7 .lcont{
+width:50%;
+height:100%;
+background:orange;
+}
+.cont7 .rcont{
+width:50%;
+height:100%;
+background:white;
+}
+.cont7 .rcont nav{
+
+width:100%;
+height:150px;
+background:lime;
+text-align:center;
+line-height:150px;
+
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+	<nav>
+	<div class="left">
+		<h1>Construction Company Landing</h1>
+		</div>
+		<div class="right">
+		<ul>
+			<li>Project</li>
+			<li>Blog</li>
+			<li>portfolio</li>
+			<li>service</li>
+			<li>services</li>
+			<li>contact</li>
+			<li>About</li>
+			<li>Home</li>
+			<li>Landing</li>
+		</ul>
+		<p><i class="fa-solid fa-cart-shopping"></i></p>
+		</div>
+	</nav>
+	<section>
+		<aside>
+			<div class="inner">
+				<h1>Divi Construction</h1><br>
+				<p>lorem ipsum dolor sit amed consectetur adipicing elit nullam<br>lectus erart consecteture eu sapien  egret rhnous consecteture</p>
+				<br><br>
+				<button>VIEW OUR WORK</button>
+			</div>
+		</aside>
+		<article>
+			<h1>OUR SERVICES</h1>
+			<h5><i class="fa-sharp fa-solid fa-city"></i></h5>
+			<h4>Building Construction</h4>
+			<p>orem ipsum dolor sit amet</p>
+			<br>
+			<h5><i class="fa-solid fa-boxes-packing"></i></h5>
+			<h4>Foundation Work</h4>
+			<p>orem ipsum dolor sit amet</p>
+			<br>
+			<h5><i class="fa-solid fa-car-side"></i></h5>
+			<h4>Tear-dowwn and haul-offs</h4>
+			<p>orem ipsum dolor sit amet</p>
+			<br>
+			<h5><i class="fa-solid fa-school"></i></h5>
+			<h4>site management</h4>
+			<p>orem ipsum dolor sit amet</p>
+			<br>
+		</article>
+	</section>
+	<header>
+	<div class="ll">
+		<h1>Get a Quate for your project</h1>
+	</div>
+		<div class="rr">
+		<button>FREE Quate</button>
+		</div>
+	</header>
+	<div class="cont">
+		<div class="l">
+			<img src="bul.jpg">
+		</div>
+		<div class="r"><br><br>
+		<h1>No Project too Big Or Too Small</h1>
+			<p>Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।
+<br><br>Find JavaScript : Search Services, Web Results, Result Pages, Popular Searches।
+Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest  Info। Updated Info। Services: coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। ServicesSearch Services, Web Results, <br><br>Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।Find JavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: JavaScriptJavaScript coding course. Search Here Now। Find JavaScript coding course। More Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services,<br><br> Web Results, Result Pages, Popular Searches।Find JavaScript codin Relevant। Relevant Results। Awesome Results। Get Latest Info। Updated Info। Services: Search Services, Web Results, Result Pages, Popular Searches।g course. <br><br>
+
+<button>LEARN MORE</button></p>
+		<div class="foo">
+			<div class="fl">
+				<h1>12<br>Years Established</h1>
+
+			</div>
+			<div class="fr">
+				<h1>250<br>Completed project</h1>
+			</div>
+		</div>
+		</div>
+	
+	</div>
+	
+<div class="cont2">
+
+<div class="cl">
+<br><br><br><br><br><br>
+<br><br><br>
+<br><br><br>
+
+<img src="bul1.jpg" >
+<br><br><br>
+<p><b>project tiltle</b><br><br>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each Chapter.
+CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayedCSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayed<br><br>
+
+<button>VIEW PROJECT</button></p></div>
+
+<div class="cm"><br><br><br>
+<h1>Latest Project</h1><br><br>
+<div class="a"><h6></h6></div><br><br>
+<img src="bul2.jpg" >
+<br><br><br>
+<p><b>project tiltle</b><br><br>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each Chapter.
+CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayed CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayed<br><br>
+
+<button>VIEW PROJECT</button></p></div>
+
+<div class="cr">
+<br><br><br><br><br><br>
+<br><br><br>
+<br><br><br>
+
+<img src="bul3.jpg" >
+<br><br><br>
+<p><b>project tiltle</b><br><br>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start
+CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8project the bjgu m,jhdstds8project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elementCSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». HTML elements should be HTML elements should be Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayed<br><br>
+
+
+<button>VIEW PROJECT</button></p></div>
+
+</div>
+<div class="nav">
+
+<button>VIEW ALL</button>
+</div>
+<div class="cont3">
+
+<div class="le"><br>
+	<h1>We've Been <br>Building For Over<br>10 Years</h1><br>
+	<div class="aa"><h6></h6></div><br>
+	<p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8project the bjgu m,jhStart learning CSS nCSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8project the bjgu m,jhStart learning CSS now ». HTML elements should be HTML elements should be Examples in Each ChapterCSS describes how HTML elements should be displayed.sourece i am project the bjgu m,jhdstds8 varsjh ,hsavCSS describes how HTML elements should be displayed<br><br>
+</p><br><br>
+<button>ABOUT US</button>
+</div>
+	<div class="re">
+	<img src="jcp1.jpg">
+	<div class="footer">
+	<div class="rfl"><br>
+			<h1>Call For A Quote <br>(346)234-6973</h1>
+	</div>
+	<div class="rfr">
+		<button>ONLINE ESTIMATE FORM</button>
+	</div>
+	
+	</div>
+	</div>
+
+</div>
+	<div class="outer">
+	<div class="lefto">
+		<h1>Let's Build <br>Something<br>Together</h1>
+		<div class="aaa"></div>
+		<p>proin curses dolor a moils consectetuur,<br>
+		rises dolor fermentum massa ,a sit<br>commoda slit dui sit amet risus maaecenas<br>ornare nisi a tortor ultrices bibendum.</p>
+		<button>GET IN TOUCH</button>
+	</div>
+	<div class="righto"><br><br>
+		<h4>Donec ruturm congue leo eget malesuada?</h4><br>
+		<p>	<p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS <br>
+		from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how .<br>
+		sourece i am project the bjgu m,jhdstds8project the bjgu m,jhStart learning CSS nCSS <br>
+		CSS from basic to advanced. Start learning CSS.should be displayed<br><br>
+		</p>
+		<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<i class="fa-solid fa-circle-plus"></i></h4><br>
+		
+		<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<i class="fa-solid fa-circle-plus"></i></h4><br>
+		<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<i class="fa-solid fa-circle-plus"></i></h4><br>
+		
+		<h4>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<i class="fa-solid fa-circle-plus"></i></h4><br>
+
+	</div>
+	</div>
+       <div class="nav11">
+	   <br><br><br>
+	   		<h1>Client Testimonials</h1>
+		<div class="abc"></div>
+
+			</div>
+	<div class="cont4">
+		
+		<div class="inner1">
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+		</div>
+		<div class="inner1">
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+
+		</div>
+		<div class="inner1">
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i>
+			<i class="fa-regular fa-star"style="color:orange;font-size:3rem"></i><br>
+			<p>The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or ...<br><br>
+			<h3>JOHM SMITH</h3>
+			</p>
+		</div>
+	
+	</div>
+	<div class="cont5">
+		<img src="logo.jpg">
+		<img src="logo1.jpg">
+		<img src="logo2.jpg">
+		<img src="logo4.jpg">
+	</div>
+	<div class="cont6">
+		<img src="logo3.jpg">
+		<img src="logo5.jpg">
+		<img src="logo6.jpg">
+		<img src="logo7.jpg">
+	</div>
+	<div class="cont7">
+		<div class="lcont">
+		
+		</div>
+		<div class="rcont">
+			<nav>
+				<i class="fa-brands fa-facebook" style="font-size:50px;"></i>
+				<i class="fa-brands fa-square-twitter" style="font-size:50px;"></i>
+				<i class="fa-brands fa-invision"style="font-size:50px;">
+			</nav>
+		
+		</div>
+	</div>
+</div>
+</body>
+</html>

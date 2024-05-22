@@ -1,0 +1,438 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+dispaly:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+dispaly:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+label i{
+font-size:30px;
+padding:22px;
+}
+label,input{
+display:none;
+}
+
+header{
+width:100%;
+height:200px;
+position:relative;
+padding-top:70px;
+}
+
+header::before{
+content:'';
+background-image:url(img/interior.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(15%);
+}
+header h1{
+font-size:70px;
+position:relative;
+color:white;
+padding:20px;
+margin:20px 100px;
+border-left:5px solid orange;
+}
+section{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+section .image{
+width:300px;
+height:400px;
+padding:20px;
+margin-top:50px;
+border:1px solid lightgray;
+}
+section .image h3{
+margin-top:20px;
+}
+section .image h5{
+margin-top:20px;
+color:lightgray;
+}
+section .image p{
+margin-top:20px;
+}
+.form{
+width:100%;
+display:flex;
+margin-top:70px;
+
+}
+.form .lf{
+width:50%;
+height:650px;
+background:orange;
+
+}
+.form .lf input{
+width:500px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:20px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 30 100px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:180px;
+height:60px;
+background:white;
+margin:50 100px;
+}
+.form .lf textarea{
+width:500px;
+height:100px;
+border:2px solid black;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:40px;
+margin:40 100px;
+}
+.form .rf{
+width:50%;
+height:650px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:25px;
+margin-left:80px;
+}
+footer{
+width:100%
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:260px;
+}
+
+/*---------------------------------------------------------------------------------*/
+@media(max-width:600px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+
+section{
+width:100%;
+display:flex;
+flex-direction;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+section .image{
+width:300px;
+height:400px;
+padding:20px;
+margin-top:50px;
+border:1px solid lightgray;
+}
+.form{
+width:100%;
+display:flex;
+flex-direction:column;
+margin-top:50px;
+
+}
+.form .lf{
+width:100%;
+height:650px;
+background:orange;
+
+}
+.form .lf input{
+width:420px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:50px;
+margin-bottom:20px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 20px 50px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:150px;
+height:60px;
+background:white;
+margin:20 50px;
+}
+.form .lf textarea{
+width:420px;
+height:100px;
+border:2px solid black;
+font-size:30px;
+margin-left:50px;
+}
+.form .lf h1{
+font-size:36px;
+margin:40px 50px;
+}
+.form .rf{
+width:100%;
+height:650px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:20px;
+margin-left:50px;
+}
+footer{
+width:100%
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:200px;
+}
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Project.html">Project</a></li>
+			<li><a href="Blog.html"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">Blog</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">contact</a></li>
+		</ul>
+    </nav>
+	<header>
+		<h1>News</h1>
+	</header>
+	<section>
+		<div class="image">
+			<img src="img/flo5.jpg" width="300px" height="200px"/>
+			<h3>Nunc Volutpat Venenatis</h3>
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+		</div>
+		
+		<div class="image">
+			<img src="img/flo1.jpg"width="300px" height="200px"/>
+			<h3>Vestibulum Nisl Felis</h3>
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,..</p>
+		</div>
+		
+		<div class="image">
+			<img src="img/flo2.jpg"width="300px" height="200px"/>
+			<h3>Proin Eu Augue Efficitur</h3>		
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,..</p>
+		</div>
+		
+		<div class="image">
+			<img src="img/flo3.jpg"width="300px" height="200px"/>
+			<h3>Nam Vulputate Tempus</h3>
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,..</p>
+		</div>
+		
+		<div class="image">
+			<img src="img/flo4.jpg"width="300px" height="200px"/>
+			<h3>Donec Sit Amet Nibh</h3>
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,..</p>
+		</div>
+		<div class="image">
+			<img src="img/flo.jpg"width="300px" height="200px"/>
+			<h3>Maecenas Fringilla Augue</h3>
+			<h5>May 9, 2014 | Category</h5>
+			<p>Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,..</p>
+		</div>
+		
+	</section>
+	<div class="form">
+		<div class="lf">
+			<h1>Join Our Newsletter</h1>
+			<div></div>
+			<input type="text" placeholder="FirstName...">
+			<input type="text" placeholder="LastName..">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+			
+		</div>
+		<div class="rf">
+			<div class="nav">
+				<i class="fa-brands fa-facebook-f" style="font-size:30px; color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-internet-explorer"style="font-size:30px;color:white;"></i>
+			</div>
+				<br><br>
+				<p><i class="fa-sharp fa-solid fa-location-dot"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur elit.</p><br><br>
+				<p><i class="fa-solid fa-phone"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+00 123 456 7893</p><br><br>
+				<p><i class="fa-solid fa-envelope" style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divi-construction@gmail.com</p>
+			</div>
+		</div>
+	<footer>
+		<div class="lef">
+			<span>Designed by Elegant Themes&nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>

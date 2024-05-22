@@ -1,0 +1,566 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999;
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+dispaly:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+dispaly:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+label i{
+font-size:30px;
+padding:22px;
+}
+label,input{
+display:none;
+}
+
+header{
+width:100%;
+height:400px;
+position:relative;
+padding-top:70px;
+}
+
+header::before{
+content:'';
+background-image:url(img/cont.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(24%);
+}
+header h1{
+font-size:60px;
+position:relative;
+color:white;
+padding:5px;
+margin:20px 100px;
+border-left:8px solid orange;
+}
+header p{
+position:relative;
+font-size:20px;
+color:white;
+margin:10px 100px;
+}
+section{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+section .cont{
+width:300px;
+height:450px;
+margin-top:50px;
+}
+section .cont .p{
+padding:20px;
+margin-top:28px;
+height:200px;
+border:1px solid lightgray;
+
+}
+section .cont button{
+width:180px;
+height:50px;
+border:1px solid lightgray;
+letter-spacing:3px;
+margin-top:20px;
+background:white;
+}
+section .cont h3{
+margin-bottom:20px;
+}
+.header1{
+width:100%;
+height:300px;
+background:orange;
+margin-top:50px;
+text-align:center;
+}
+.header1 h1{
+padding-top:100px;
+}
+.form{
+width:100%;
+display:flex;
+}
+.form .lf{
+width:50%;
+height:600px;
+background:orange;
+
+}
+.form .lf input{
+width:200px;
+height:70px;
+display:inline-block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:30px;
+}
+.form .lf button{
+color:black;
+height:60px;
+width:150px;
+border:1px solid black;
+margin:30 100px;
+}
+.form .lf textarea{
+width:500px;
+height:150px;
+border:1px solid black;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:60px;
+margin:40 100px;
+}
+.form .rf{
+width:50%;
+height:600px;
+
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+padding-top:70px;
+}
+.form .rf p{
+color:gray;
+font-size:15px;
+margin-left:80px;
+}
+footer {
+width:100%;
+height:80px;
+background:black;
+}
+
+footer{
+width:100%
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:250px;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+@media(max-width:600px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+
+header{
+width:100%;
+height:400px;
+position:relative;
+padding-top:100px;
+}
+
+header::before{
+content:'';
+background-image:url(img/cont.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(24%);
+}
+header h1{
+font-size:50px;
+position:relative;
+color:white;
+padding:5px;
+margin:30px 50px;
+border-left:8px solid orange;
+}
+header p{
+position:relative;
+font-size:15px;
+color:white;
+margin:10px 50px;
+}
+section{
+width:100%;
+flex-direction:column;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+section .cont{
+width:300px;
+height:450px;
+margin-left:100px;
+margin-top:50px;
+}
+section .cont .p{
+padding:20px;
+margin-top:28px;
+height:200px;
+border:1px solid lightgray;
+
+}
+section .cont button{
+width:180px;
+height:50px;
+border:1px solid lightgray;
+letter-spacing:3px;
+margin-top:20px;
+background:white;
+}
+section .cont h3{
+margin-bottom:20px;
+}
+.header1{
+width:100%;
+height:300px;
+background:orange;
+margin-top:50px;
+text-align:center;
+}
+.header1 h1{
+padding-top:100px;
+}
+.form{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.form .lf{
+width:100%;
+height:700px;
+background:orange;
+}
+.form .lf input{
+width:120px;
+height:60px;
+display:inline-block;
+border:1px solid black;
+background:white;
+margin-left:70px;
+}
+.form .lf button{
+border:1px solid black;
+color:black;
+height:60px;
+margin:30px 70px;
+}
+.form .lf textarea{
+width:320px;
+height:150px;
+border:1px solid black;
+font-size:30px;
+margin-left:70px;
+
+}
+.form .lf h1{
+font-size:40px;
+margin-left:70px;
+}
+.form .lf .a{
+width:100px;
+border-bottom:8px solid black;
+margin-left:70px;
+margin-bottom:30px;
+}
+.form .rf{
+width:100%;
+height:600px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+padding-top:70px;
+}
+.form .rf p{
+color:black;
+font-size:15px;
+margin-left:80px;
+}
+
+footer{
+width:100%
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:200px;
+}
+
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Project.html">Project</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="Portfolio.html"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">contact</a></li>
+		</ul>
+    </nav>
+	<header>
+		<h1>Our Construction<br> Projects</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur <br>eu sapien eget, rhoncus consectetur sem.</p>
+		
+	</header>
+	<section>
+		<div class="cont">
+			<img src="img/cont1.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont2.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/img1.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont4.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont5.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont6.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont7.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		<div class="cont">
+			<img src="img/cont8.jpg"width="300px" height="200px">
+			<div class="p">
+				<h3>Service Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		
+		
+		</div>
+	</section>
+	<div class="header1">
+		<h1>Have a Project in Mind?<br>
+		Let’s Get Building!</h1>
+	</div>
+	<div class="form">
+		<div class="lf">
+			<h1>Contact Us</h1>
+			<div class="a"><h6></h6></div>
+			<input type="text" placeholder="Name...">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+			
+		</div>
+		<div class="rf">
+			<div class="nav">
+				<i class="fa-brands fa-facebook-f" style="font-size:30px; color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-internet-explorer"style="font-size:30px;color:white;"></i>
+			</div><br><br>
+				<p><i class="fa-sharp fa-solid fa-location-dot"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur elit.</p><br><br>
+				<p><i class="fa-solid fa-phone"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+00 123 456 7893</p><br><br>
+				<p><i class="fa-solid fa-envelope" style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divi-construction@gmail.com</p>
+		</div>
+	</div>
+		<footer>
+		<div class="lef">
+			<span>Designed by Elegant Themes&nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>

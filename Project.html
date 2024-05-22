@@ -1,0 +1,729 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+dispaly:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+dispaly:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+label i{
+font-size:30px;
+padding:20px;
+}
+label,input{
+display:none;
+}
+section{
+width:100%;
+height:400px;
+position:relative;
+display:flex;
+padding-top:70px;
+}
+
+section::before{
+content:'';
+background-image:url(img/office.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(35%);
+}
+section h1{
+font-size:50px;
+margin-left:200px;
+position:relative;
+color:white;
+padding-left:20px;
+border-left:5px solid orange;
+}
+section p{
+font-size:20px;
+position:relative;
+color:white;
+margin-left:200px;
+}
+section label{
+margin-left:300px;
+}
+section aside h1{
+margin-top:100px;
+}
+section article p{
+margin-top:120px;
+}
+.cont{
+width:100%;
+background:;
+display:flex;
+background:;
+}
+.cont .lc{
+width:50%;
+height:500px;
+background:;
+}
+.cont .lc h1{
+margin:50px 150px;
+font-size:50px;
+}
+.cont .lc p{
+margin:20px 150px;
+}
+.cont .lc div{
+width:80px;
+margin:30px 150px;
+border-bottom:7px solid orange;
+}
+.cont .lc ul{
+margin:20px 160px;
+}
+.cont .rc{
+width:50%;
+height:500px;
+}
+.cont .rc img{
+width:500px;
+margin:70px 40px;
+}
+.image{
+width:100%;
+height:600px;
+background:;
+}
+.image img{
+margin-left:150px;
+}
+.cont1{
+width:100%;
+background:;
+display:flex;
+}
+.cont1 .leftc{
+width:50%;
+height:600px;
+background:;
+}
+.cont1 .rightc{
+width:50%;
+height:600px;
+background:;
+}
+.cont1 .leftc img{
+width:500px;
+margin:50px 150px;
+}
+.cont1 .rightc p{
+width:70%;
+padding:50px;
+}
+.cont2{
+width:100%;
+display:flex;
+text-align:center;
+}
+.cont2 .pc{
+width:33%;
+height:600px;
+text-align:center;
+}
+
+header{
+width:100%;
+height:150px;
+}
+header h1{
+margin:0px 500px;
+font-size:60px;
+}
+header div{
+border-bottom:7px solid orange;
+width:100px;
+margin:10px 650px;
+}
+.cont2 .pc .para{
+border:2px solid lightgray;
+padding:40px;
+width:59%;
+margin:50px;
+}
+
+.para button{
+width:180px;
+height:50px;
+letter-spacing:5px;
+background:white;
+}
+.head{
+width:100%;
+height:200px;
+}
+.head button{
+width:180px;
+height:70px;
+letter-spacing:5px;
+background:white;
+border:4px solid black;
+margin:0px 600px;
+font-size:15px;
+font-weight:bold;
+}
+.form{
+width:100%;
+display:flex;
+margin-top:70px;
+
+}
+.form .lf{
+width:50%;
+height:600px;
+background:orange;
+
+}
+.form .lf input{
+width:200px;
+height:60px;
+display:inline-block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:40px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 30 100px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:180px;
+height:60px;
+background:white;
+margin:50 100px;
+}
+.form .lf textarea{
+width:500px;
+height:150px;
+border:2px solid black;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:60px;
+margin:40 100px;
+}
+.form .rf{
+width:50%;
+height:600px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:25px;
+margin-left:80px;
+}
+footer{
+width:100%
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:300px;
+}
+
+
+
+
+
+@media(max-width:600px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ nav ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+
+section{
+width:100%;
+position:relative;
+display:flex;
+flex-direction:column;
+padding-top:150px
+}
+
+section::before{
+content:'';
+background-image:url(img/office.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(35%);
+}
+section h1{
+font-size:40px;
+margin-left:100px;
+position:relative;
+color:white;
+padding-left:20px;
+border-left:5px solid orange;
+}
+section p{
+font-size:16px;
+position:relative;
+color:white;
+margin-left:100px;
+}
+section label{
+margin-left:150px;
+}
+section aside h1{
+margin-top:30px;
+}
+section article p{
+margin-top:50px;
+}
+.cont{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.cont .lc{
+width:100%;
+height:500px;
+}
+
+.cont .lc div{
+width:80px;
+border-bottom:7px solid orange;
+}
+.cont .lc ul{
+margin:20px 160px;
+}
+.cont .rc{
+width:100%;
+height:500px;
+}
+.cont .rc img{
+width:500px;
+margin:20px 20px;
+}
+.image{
+width:100%;
+}
+.image img{
+margin-left:0px;
+width:100%;
+}
+.cont1{
+width:100%;
+flex-direction:column;
+display:flex;
+}
+.cont1 .leftc{
+width:100%;
+height:600px;
+}
+.cont1 .rightc{
+width:100%;
+height:600px;
+}
+.cont1 .leftc img{
+width:400px;
+height:500px;
+margin-top:30px;
+margin-left:70px;
+}
+.cont1 .rightc p{
+width:100%;
+padding:3px;
+}
+
+header{
+width:100%;
+height:150px;
+}
+header h1{
+margin:0px 100px;
+font-size:50px;
+}
+header div{
+border-bottom:7px solid orange;
+width:100px;
+margin:10px 200px;
+}
+.cont2{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.cont2 .pc{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.cont2 .pc img{
+width:100%;
+height:250px;
+margin:auto;
+}
+.cont2 .pc .para{
+margin:auto;
+}
+.para button{
+width:180px;
+height:50px;
+letter-spacing:5px;
+background:white;
+}
+.head{
+width:100%
+height:200px;
+}
+.head button{
+width:180px;
+height:70px;
+letter-spacing:5px;
+background:white;
+border:4px solid black;
+margin-left:220px;
+margin-top:70px;
+font-size:15px;
+font-weight:bold;
+}
+.cont2 .pc .para{
+border:2px solid lightgray;
+padding:20px;
+width:100%;
+margin-top:30px;
+}
+.cont2 .para #mm{
+margin-left:0px;
+}
+.cont2 .para #mmm{
+margin-left:5px;
+}
+.form{
+width:100%;
+display:flex;
+flex-direction:column;
+margin-top:70px;
+
+}
+.form .lf{
+width:100%;
+height:600px;
+background:orange;
+
+}
+.form .lf input{
+width:160px;
+height:60px;
+display:inline-block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:40px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 30px 100px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:150px;
+height:60px;
+background:white;
+margin:50 100px;
+}
+.form .lf textarea{
+width:420px;
+height:150px;
+border:2px solid black;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:60px;
+margin:40px 100px;
+}
+.form .rf{
+width:100%;
+height:600px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:25px;
+margin-left:80px;
+}
+footer{
+width:100%
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:250px;
+}
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="Index.html">Index</a></li>
+			<li><a href="Project.html"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">Project</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">contact</a></li>
+		</ul>
+    </nav>
+	<section>
+			<aside>
+				<h1>Monarach HQ Project</h1><br>
+				<p>lorem ipsum dolor sit amed consectetur adipicing elit nullam<br>lectus erart consecteture eu sapien  egret rhnous consecteture</p>
+			</aside>
+			<article>
+				<p>Date:30&nbsp;April&nbsp;2023
+				<br>
+				Client:Varsha Wagh<br>
+				Project Type:Building Renovation</p>
+			</article>
+	</section>
+	<div class="cont">
+		<div class="lc">
+			<h1>About this Project</h1>
+			<div></div>
+			<p>Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus.
+			Maecenas ornare nisl</p>
+			<ul>
+				<li>A tortor ultrices bibendum</li>
+				<li>Nulla fermentum</li>
+				<li>Sodales tristique</li>
+				<li>Metus quis</li>
+			</ul>
+		</div>
+		<div class="rc">
+			<img src="img/imgbul.jpg">
+		</div>
+	</div>
+	<div class="image">
+		<img src="img/backimg.jpg" width="1100" height="600"/>
+	</div>
+	<div class="cont1">
+		<div class="leftc">
+			<img src="img/leftimg.jpg"width="500" height="250"/>
+		</div>
+		<div class="rightc">
+			<p>Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus.<br><br>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.<br><br>
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+		</div>
+	</div>
+	<header>
+		<h1>Related Project</h1>
+		<div></div>
+	</header>
+	<div class="cont2">
+		<div class="pc">
+			<img src="img/img.jpg"width="350" height="250"id="mm"/>
+			<br>
+			<div class="para"id="mm">
+				<h2>Service Title</h2>
+				<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam</p><br>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		<div class="pc">
+			<img src="img/img1.jpg"width="350" height="250"id="mmm"/>
+			<br>
+			<div class="para"id="mmm">
+				<h2>Service Title</h2>
+				<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam</p><br>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+		<div class="pc">
+			<img src="img/img2.jpg"width="350" height="250"/>
+			<br>
+			<div class="para">
+				<h2>Service Title</h2>
+				<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasell sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam</p><br>
+				<button>LEARN MORE</button>
+			</div>
+		</div>
+	</div>
+	<div class="head">
+		<button>VIEW ALL</button>
+	</div>
+	<div class="form">
+		<div class="lf">
+			<h1>Contact Us</h1>
+			<div></div>
+			<input type="text" placeholder="Name...">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+			
+		</div>
+		<div class="rf">
+			<div class="nav">
+				<i class="fa-brands fa-facebook-f" style="font-size:30px; color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-internet-explorer"style="font-size:30px;color:white;"></i>
+			</div>
+				<br><br>
+				<p><i class="fa-sharp fa-solid fa-location-dot"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur elit.</p><br><br>
+				<p><i class="fa-solid fa-phone"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+00 123 456 7893</p><br><br>
+				<p><i class="fa-solid fa-envelope" style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divi-construction@gmail.com</p>
+		</div>
+	</div>
+	<footer>
+		<div class="lef">
+			<span>Designed by Elegant Themes&nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>

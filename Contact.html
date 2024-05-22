@@ -1,0 +1,579 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999;
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+display:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+display:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+label i{
+font-size:30px;
+padding:22px;
+}
+label,input{
+display:none;
+}
+
+section{
+width:100%;
+display:flex;
+padding-top:70px;
+}
+aside{
+position:relative;
+width:70%;
+height:500px;
+justify-content:center;
+}
+aside::before{
+content:'';
+background-image:url(img/nutbolt.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(25%);
+}
+aside h1{
+font-size:70px;
+margin-left:40px;
+position:relative;
+color:white;
+margin:50px 100px;
+padding-left:20px;
+border-left:5px solid orange;
+}
+section aside p{
+font-size:20px;
+position:relative;
+color:white;
+margin-left:100px;
+}
+section aside button{
+border:2px solid orange;
+color:white;
+width:200px;
+height:60px;
+margin:30px 100px;
+letter-spacing:4px;
+position:relative;
+background:orange;
+}
+section article{
+width:30%;
+height:500px;
+background:orange;
+}
+article table td{
+padding:20px;
+}
+article h1{
+padding:20px 40px;
+
+}
+article p{
+color:white;
+}
+
+.call-us{
+width:100%;
+display:flex;
+transition:all 2s;
+}
+.call-us .cleft{
+width:70%;
+height:200px;
+}
+.call-us .cright{
+width:30%;
+height:200px;
+}
+
+.call-us .cleft h1{
+margin-top:50px; 
+color:orange;
+font-size:60px;
+text-align:center;
+}
+.call-us .cleft p{
+margin:15px 200px;
+font-size:30px;
+font-weight:bold;
+}
+.call-us .cright button{
+border:4px solid orange;
+width:280px;
+height:60px;
+margin:80px 100px;
+letter-spacing:4px;
+color:orange;
+background:none;
+}
+.container{
+width:100%;
+display:flex;
+background:lightgray;
+}
+.container .cont-left{
+width:50%;
+height:600px;
+}
+.container .cont-left input{
+width:450px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:100px;
+border:3px solid white;
+margin-bottom:30px;
+}
+.container .cont-left button{
+color:black;
+height:60px;
+width:200px;
+border:3px solid black;
+margin:30px 350px;
+}
+.container .cont-left textarea{
+width:450px;
+height:120px;
+border:1px solid white;
+font-size:30px;
+margin-left:100px;
+}
+.container .cont-left h1{
+font-size:40px;
+margin:40px 100px;
+}
+.container .cont-right{
+width:50%;
+height:600px;
+}
+.container .cont-right .ccrr{
+width:85%;
+height:470px;
+background:white;
+margin:60px 10px;
+}
+.container .cont-right .ccrr h4{
+padding-top:20px;
+font-size:30px;
+margin-left:20px;
+}
+.container .cont-right .ccrr h5{
+padding:10px;
+font-size:20px;
+margin-left:20px;
+
+}
+.container .cont-right .ccrr p{
+padding-left:30px;
+margin-bottom:10px;
+margin-left:20px;
+
+}
+
+footer {
+width:100%;
+height:80px;
+background:black;
+}
+
+footer{
+width:100%
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:250px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+@media(max-width:600px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+
+section{
+width:100%;
+display:flex;
+padding-top:100px;
+flex-direction:column;
+}
+aside{
+position:relative;
+width:100%;
+height:500px;
+justify-content:center;
+}
+aside::before{
+content:'';
+background-image:url(img/nutbolt.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(25%);
+}
+aside h1{
+font-size:50px;
+margin-left:20px;
+position:relative;
+color:white;
+margin:80px 50px;
+padding-left:20px;
+border-left:5px solid orange;
+}
+section aside p{
+font-size:20px;
+position:relative;
+color:white;
+margin-left:50px;
+}
+section aside button{
+border:2px solid orange;
+color:white;
+width:200px;
+height:60px;
+margin:30px 50px;
+letter-spacing:4px;
+position:relative;
+background:orange;
+}
+section article{
+width:100%;
+height:500px;
+background:orange;
+}
+article table td{
+padding:20px;
+}
+article h1{
+padding:20px 40px;
+
+}
+article p{
+color:white;
+}
+
+.call-us{
+width:100%;
+height:300px;
+display:flex;
+flex-direction:column;
+transition:all 2s;
+}
+.call-us .cleft{
+width:100%;
+}
+.call-us .cright{
+width:100%;
+}
+
+.call-us .cleft h1{
+margin-top:40px; 
+color:orange;
+font-size:40px;
+text-align:center;
+}
+.call-us .cleft p{
+margin:15px 60px;
+font-size:20px;
+font-weight:bold;
+}
+.call-us .cright button{
+border:4px solid orange;
+width:280px;
+height:60px;
+letter-spacing:4px;
+color:orange;
+background:none;
+}
+.container{
+width:100%;
+display:flex;
+flex-direction:column;
+background:lightgray;
+}
+.container .cont-left{
+width:100%;
+height:600px;
+}
+.container .cont-left input{
+width:450px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:50px;
+border:3px solid white;
+margin-bottom:30px;
+}
+.container .cont-left button{
+color:black;
+height:60px;
+width:200px;
+border:3px solid black;
+margin:30px 300px;
+}
+.container .cont-left textarea{
+width:450px;
+height:120px;
+border:1px solid white;
+font-size:30px;
+margin-left:50px;
+}
+.container .cont-left h1{
+font-size:40px;
+margin:40px 50px;
+}
+.container .cont-right{
+width:100%;
+height:600px;
+}
+.container .cont-right .ccrr{
+width:85%;
+height:470px;
+background:white;
+margin-left:50px;
+}
+.container .cont-right .ccrr h4{
+padding-top:20px;
+font-size:20px;
+margin-left:20px;
+}
+.container .cont-right .ccrr h5{
+font-size:18px;
+margin-left:20px;
+
+}
+.container .cont-right .ccrr p{
+padding-left:10px;
+margin-left:20px;
+
+}
+
+footer{
+width:100%
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:200px;
+}
+
+
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Project.html">Project</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">contact</a></li>
+		</ul>
+    </nav>
+	<section>
+		<aside>
+			<h1>Contact Us</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</p>
+			<button>SEND A MESSAGE</button>
+		</aside>
+		<article>
+			<h1 style="font-size:40px;">Contact Info</h1>
+			<table>
+				<tr>
+					<td><i class="fa-solid fa-location-dot" style="color:white;font-size:60px;"></i></td>
+					<td><h2 style="color:white">Our Office</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+				
+				<tr>
+					<td><i class="fa-solid fa-clock"style="color:white;font-size:60px;"</i></td>
+					<td><h2 style="color:white">Open Office Hours</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+				
+				<tr>
+					<td><i class="fa-solid fa-magnifying-glass"style="color:white;font-size:60px;"></i></td>
+					<td><h2 style="color:white">Get In Touch</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<div class="call-us">
+		<div class="cleft">
+			<h1>Call: (541) 931-3526</h1>
+			<p>We Can’t Wait to Make Your Ideas a Reality</p>
+		</div>
+		<div class="cright">
+			<button>ONLINE ESTIMATE FORM</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cont-left">
+			<h1>GET IN TOUCH</h1>
+			<div></div>
+			<input type="text" placeholder="Name...">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+		</div>
+		<div class="cont-right">
+			<div class="ccrr">
+				<h4>Donec ruturm congue leo eget malesuada?</h4><br>
+			<p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS <br>
+			from basic to advanced. Start learning CSS now ». Examples in Each ChapterCSS describes how .<br>
+			sourece i am project the bjgu m,jhdstds8project the bjgu m,jhStart learning CSS nCSS <br>
+			CSS from basic to advanced. Start learning CSS.should be displayed<br><br>
+			</p>
+			<h5>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h5><br>
+			
+			<h5>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h5><br>
+			<h5>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h5><br>
+			
+			<h5>Donec ruturm congue leo eget malesuada?	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-circle-plus"style="color:orange;"></i></h5><br>		
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="lef">
+			<span>Designed by Elegant Themes&nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>

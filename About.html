@@ -1,0 +1,757 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+
+nav{
+width:100%;
+height:70px;
+background:lightgray;
+position:fixed;
+z-index:999;
+}
+
+nav ul{
+float:right;
+}
+
+nav p{
+width:20%;
+dispaly:inline-block;
+margin-top:10px;
+}
+
+nav h1{
+width:20%;
+dispaly:inline-block;
+font-size:25px;
+margin-top:10px;
+}
+nav ul li{
+list-style:none;
+float:left;
+padding:20px;
+}
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+label i{
+font-size:30px;
+padding:22px;
+}
+label,input{
+display:none;
+}
+
+header{
+width:100%;
+height:420px;
+position:relative;
+padding-top:70px;
+display:flex;
+}
+
+header::before{
+content:'';
+background-image:url(img/backimg.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(24%);
+}
+
+header .left h1{
+font-size:40px;
+position:relative;
+color:white;
+padding:5px;
+margin:20px 100px;
+border-left:8px solid orange;
+}
+
+header .left p{
+position:relative;
+font-size:20px;
+color:white;
+margin:10px 100px;
+}
+.left{
+width:60%;
+height:100%;
+}
+.right{
+width:40%;
+height:100%;
+transition:all 2s;
+}
+header h2{
+position:relative;
+}
+header table{
+position:relative;
+color:white;
+padding:30px;
+}
+header table td{
+padding:20px;
+}
+header .left button{
+border:2px solid orange;
+letter-spacing:4px;
+color:white;
+background:orange;
+width:180px;
+height:50px;
+position:relative;
+margin:20px 100px;
+}
+header .left button:hover{
+width:220px;
+}
+
+.head{
+width:100%;
+height:100px;
+}
+.head h1{
+text-align:center;
+margin-top:70px;
+font-size:50px;
+}
+.head div{
+border-bottom:7px solid orange;
+width:100px;
+margin:30px 580px;
+}
+section{
+width:100%;
+height:400px;
+column-count:2;
+
+}
+section p{
+padding:50px;
+font-size:px;
+}
+.container{
+width:100%;
+display:flex;
+background:lightgray;
+}
+.container .lc{
+width:35%;
+height:800px;
+transition:all 2s;
+}
+.container .lc h1{
+margin:20px 50px;
+font-size:50px;
+}
+.container .lc table,tr,td{
+padding:20px;
+}
+.container .lc button{
+width:180px;
+height:60px;
+background:white;
+letter-spacing:4px;
+border:4px solid orange;
+margin:10px 180px;
+}
+.container .lc button:hover{
+background:orange;
+width:200px;
+}
+
+.container .rc{
+width:65%;
+height:800px;
+}
+
+.container .rc .rcf{
+width:100%;
+display:flex;
+}
+.container .rc .rcf .rcfl{
+width:50%;
+height:130px;
+text-align:center;
+background:orange;
+}
+.container .rc .rcf .rcfl h1{
+font-size:60px;
+margin-top:10px;
+}
+.container .rc .rcf .rcfr{
+width:50%;
+height:130px;
+text-align:center;
+background:black;
+color:white;
+}
+.container .rc .rcf .rcfr h1{
+font-size:50px;
+margin-top:20px;
+}
+.container .rc .rcf1{
+width:100%;
+display:flex;
+}
+.container .rc .rcf1 .rcfl1{
+width:50%;
+height:130px;
+text-align:center;
+}
+.container .rc .rcf1 .rcfl1 h1{
+font-size:60px;
+margin-top:30px;
+}
+.container .rc .rcf1 .rcfr1{
+width:50%;
+height:130px;
+text-align:center;
+}
+.container .rc .rcf1 .rcfr1 h1{
+font-size:50px;
+margin-top:40px;
+}
+
+.cont{
+width:100%;
+height:250px;
+text-align:center;
+}
+.cont h2{
+margin-top:80px;
+}
+.cont p{
+margin-top:20px;
+}
+.form{
+width:100%;
+display:flex;
+margin-top:70px;
+
+}
+.form .lf{
+width:50%;
+height:650px;
+background:orange;
+
+}
+.form .lf input{
+width:500px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:100px;
+margin-bottom:20px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 30 100px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:180px;
+height:60px;
+background:white;
+margin:50 100px;
+}
+.form .lf textarea{
+width:500px;
+height:100px;
+border:2px solid black;
+font-size:30px;
+margin-left:100px;
+}
+.form .lf h1{
+font-size:40px;
+margin:40 100px;
+}
+.form .rf{
+width:50%;
+height:650px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:25px;
+margin-left:80px;
+}
+footer{
+width:100%
+background:black;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:200px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:70%;
+height:80px;
+background:black;
+float:left;
+line-height:80px;
+}
+
+footer .ref{
+width:30%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:260px;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+@media(max-width:600px){
+nav{
+width:100%;
+height:70px;
+background:aqua;
+}
+nav h1{
+padding-left:10px; 
+font-size:15px;
+}
+nav label{
+display:block;
+float:right;
+}
+nav li{
+width:100%;
+text-align:center;
+}
+ul{
+top:-100%;
+position:fixed;
+transition:all 2s;
+z-index:899;
+background:white;
+}
+#check:checked~ul{
+top:70px;
+}
+
+header{
+width:100%;
+height:800px;
+position:relative;
+flex-direction:column;
+padding-top:100px;
+}
+
+header::before{
+content:'';
+background-image:url(img/backimg.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+filter:brightness(24%);
+}
+header .left h1{
+font-size:50px;
+position:relative;
+color:white;
+padding:5px;
+margin:30px 50px;
+border-left:8px solid orange;
+}
+header .left p{
+position:relative;
+font-size:15px;
+color:white;
+margin:10px 50px;
+}
+header .left{
+width:100%;
+}
+header .right{
+width:100%;
+}
+header .left button{
+margin-left:50px;
+}
+
+.head{
+width:100%;
+height:100px;
+}
+.head h1{
+text-align:center;
+font-size:30px;
+}
+.head div{
+border-bottom:7px solid orange;
+width:100px;
+margin:30px 200px;
+}
+section{
+width:100%;
+height:730px;
+flex-direction:column;
+column-count:1;
+}
+.container{
+width:100%;
+display:flex;
+flex-direction:column;
+background:lightgray;
+}
+.container .lc{
+width:100%;
+height:800px;
+transition:all 2s;
+}
+.container .lc h1{
+margin:20px 50px;
+font-size:40px;
+}
+.container .lc table,tr,td{
+padding:20px;
+}
+.container .lc button{
+width:180px;
+height:60px;
+background:white;
+letter-spacing:4px;
+border:4px solid orange;
+margin:10px 180px;
+}
+.container .lc button:hover{
+background:orange;
+width:200px;
+}
+
+.container .rc{
+width:100%;
+height:1000px;
+flex-direction:column;
+}
+
+.container .rc .rcf{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.container .rc .rcf .rcfl{
+width:100%;
+height:130px;
+text-align:center;
+background:orange;
+}
+.container .rc .rcf .rcfl h1{
+font-size:60px;
+margin-top:10px;
+}
+.container .rc .rcf .rcfr{
+width:100%;
+height:130px;
+text-align:center;
+background:black;
+color:white;
+}
+.container .rc .rcf .rcfr h1{
+font-size:50px;
+margin-top:20px;
+}
+.container .rc .rcf1{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.container .rc .rcf1 .rcfl1{
+width:100%;
+height:130px;
+text-align:center;
+}
+.container .rc .rcf1 .rcfl1 h1{
+font-size:60px;
+margin-top:15px;
+}
+.container .rc .rcf1 .rcfr1{
+width:100%;
+height:130px;
+text-align:center;
+}
+.container .rc .rcf1 .rcfr1 h1{
+font-size:50px;
+margin-top:10px;
+}
+.form{
+width:100%;
+display:flex;
+flex-direction:column;
+margin-top:50px;
+
+}
+.form .lf{
+width:100%;
+height:650px;
+background:orange;
+
+}
+.form .lf input{
+width:420px;
+height:60px;
+display:block;
+background:white;
+text-align:center;
+margin-left:50px;
+margin-bottom:20px;
+}
+.form .lf div{
+width:100px;
+border-bottom:8px solid black;
+margin: 20px 50px;
+
+}
+.form .lf button{
+border:3px solid black;
+color:black;
+width:150px;
+height:60px;
+background:white;
+margin:20 50px;
+}
+.form .lf textarea{
+width:420px;
+height:100px;
+border:2px solid black;
+font-size:30px;
+margin-left:50px;
+}
+.form .lf h1{
+font-size:36px;
+margin:40px 50px;
+}
+.form .rf{
+width:100%;
+height:650px;
+}
+.form .rf .nav{
+width:100%;
+height:100px;
+background:black;
+text-align:center;
+line-height:100px;
+}
+
+.form .rf p{
+color:black;
+font-size:20px;
+margin-left:50px;
+}
+footer{
+width:100%
+background:black;
+flex-direction:column;
+display:flex;
+}
+footer span{
+color:white;
+font-size:20px;
+margin-left:50px;
+}
+footer span p{
+border-left:3px solid white;
+}
+footer .lef{
+width:100%;
+height:80px;
+background:black;
+line-height:80px;
+}
+
+footer .ref{
+width:100%;
+height:80px;
+color:white;
+background:black;
+line-height:80px;
+}
+footer .ref p{
+margin-left:200px;
+}
+}
+</style>
+</head>
+<body>
+	<nav>
+		<h1 style="float:left;">company construction landing</h1>
+		<label for="check"><i class="fa-solid fa-bars"></i></label>
+		<input type="checkbox" id="check">
+		<ul style="float:right;">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Project.html">Project</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Service.html">Service</a></li>
+			<li><a href="About.html"style="border-bottom:5px solid green;padding-bottom:5px;color:gray;">About</a></li>
+			<li><a href="Contact.html">contact</a></li>
+		</ul>
+    </nav>
+	<header>
+		<div class="left">
+			<h1>About Our Construction company</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur eu sapien eget, rhoncus consectetur sem.</p>
+			<button>VIEW OUR WORK</button>
+		</div>
+		<div class="right">
+			<table>
+				<tr>
+					<td><i class="fa-solid fa-building-flag" style="color:orange;font-size:60px;"></i></td>
+					<td><h2 style="color:white">Building construction</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+				
+				<tr>
+					<td><i class="fa-solid fa-wrench" style="color:orange;font-size:60px;"></i></td>
+					<td><h2 style="color:white">Building Repairs</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+				
+				<tr>
+					<td><i class="fa-solid fa-house" style="color:orange;font-size:60px;"></i></td>
+					<td><h2 style="color:white">Custom Design</h2><br>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+	<div class="head">
+		<h1>About Divi Construction</h1>
+		<div></div>
+	</div>
+	
+	<section>
+		<p>Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.<br><br>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nibh dignissim, cursus tellus sit amet, ultrices mauris. Aliquam blandit est in eros elementum, quis vehicula est suscipit. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue non feugiat ligula neque nec felis.</p>
+		<br><br><p>Lorem ipsum dolor sit consectetur adipiscing elit. Nullam lectus erat, consectetur eu sapien eget rhoncus consectetur sem.
+		<br><br>Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue non feugiat ligula neque nec felis.
+		<br><br>Lectus erat, consectetur eu sapien eget rhoncus consectetur sem. Proin cursus, dolor a mollis consectetur, risus dolor fermentum massa, a commodo elit dui sit amet risus. Maecenas ornare nisl a tortor ultrices bibendum. Nulla fermentum, metus quis sodales tristique, augue mauris molestie augue, non feugiat ligula neque nec felis.</p>
+	</section>
+	
+	<div class="container">
+	
+	<div class="lc">
+		<h1>Only the Best</h1>
+		<table>
+			<tr>
+				<td><i class="fa-solid fa-angles-right" style="color:orange;font-size:40px;"></i></td>
+				<td><h3>Eco Friendly Construction</h3><br><p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Donec rutrum</p></td>
+			</tr>
+			
+			<tr>
+				<td><i class="fa-solid fa-angles-right" style="color:orange;font-size:40px;"></i></td>
+				<td><h3>The Newest Technology Repairs</h3><br><p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Donec rutrum</p></td>
+			</tr>
+			
+			<tr>
+				<td><i class="fa-solid fa-angles-right" style="color:orange;font-size:40px;"></i></td>
+				<td><h3>High Quality Construction Management</h3><br><p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Donec rutrum</p></td>
+			</tr>
+		</table>
+		<button>FREE QUOTE</button>
+	</div>
+	
+	<div class="rc">
+		<img src="img/rc.jpg" width="100%" height="500px"/>
+		<div class="rcf">
+			<div class="rcfl">
+				<h1>12</h1>
+				<h4>Years Established</h4>
+			</div>
+			<div class="rcfr">
+				<h1>250</h1>
+				<h4>Project Completed</h4>
+			</div>
+		</div>
+		
+		<div class="rcf1">
+			<div class="rcfl1">
+				<h1>24</h1>
+				<h4>FIELD WORKERS</h4>
+			</div>
+			<div class="rcfr1">
+				<h1>18</h1>
+				<h4>OFFICE STAFF</h4>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="cont">
+		<h2>“Suspendisse neque erat, imperdiet ac non,<br>sollicitudin accumsan lacus. Vestibulum ac ex<br>rutrum, pellentesque purus et, lacinia mi. Nullam<br>maximus lectus libero.”</h2>
+		<p>JOHN SMITH – DIVI CORNER</p>
+	</div>
+	<div class="form">
+		<div class="lf">
+			<h1>Join Our Newsletter</h1>
+			<div></div>
+			<input type="text" placeholder="FirstName...">
+			<input type="text" placeholder="LastName..">
+			<input type="text" placeholder="Email Address..">
+			<textarea placeholder="Message...."></textarea>
+			<button>SEND MESSAGE</button>
+			
+		</div>
+		<div class="rf">
+			<div class="nav">
+				<i class="fa-brands fa-facebook-f" style="font-size:30px; color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-internet-explorer"style="font-size:30px;color:white;"></i>
+			</div>
+				<br><br>
+				<p><i class="fa-sharp fa-solid fa-location-dot"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur elit.</p><br><br>
+				<p><i class="fa-solid fa-phone"style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+00 123 456 7893</p><br><br>
+				<p><i class="fa-solid fa-envelope" style="font-size:30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divi-construction@gmail.com</p>
+			</div>
+		</div>
+	<footer>
+		<div class="lef">
+			<span>Designed by Elegant Themes&nbsp;&nbsp;|&nbsp;&nbsp;Powered by WordPress</span>
+		</div>
+		<div class="ref">
+			<p><i class="fa-brands fa-facebook-f"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-brands fa-twitter"style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa-solid fa-wifi"style="font-size:20px"></i></p>
+		</div>
+	</footer>
+</body>
+</html>
